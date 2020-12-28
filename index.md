@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="product-style.css">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <title>Product Landing Page</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><i class="fas fa-eye"></i></li>
+        <li>
+          <a href="#about">About</a> 
+        </li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#shop">Shop</a></li>
+      </ul>
+    </nav>
+    <a href="#s-offer"><p id="offer">SPECIAL OFFER!! 
+    Glasses for whole family!</p></a>
+    
+  </header>
+  <main>
+    <article id="s-offer">
+      <section id="offer-desc">
+        <h2>Buy two get third for FREE!</h2>
+        <p>
+          <h3>Surprise your family with great Christmas and New Year gifts!</h3>
+          Buy one glasses for adult and one for a child and choose third glasses for free!
+          <br>
+          You can choose third glasses to be for adult or for a child!
+          <br>
+          Offer is valid until New Year -  1/1/2021!
+        </p>
+      </section>
+      <section id="offer-imgs">
+        <img class="o-img" src="glasses1.jpg" alt=""> <i class="fas fa-plus o-img"></i> <img class="o-img" src="glasses2.jfif" alt="">
+      </section>
+    </article>
+    <article id="product">
+      <section id="product-desc">
+        <p><h3>How they are made?</h3>
+          The present invention provides a blue light blocking lens and a manufacturing method thereof capable of substantially lowering blue light transmittance of a plastic lens by adding an additive when manufacturing the lens. The blue light blocking lens according to the present invention mixes a monomer which is a material used in manufacturing a plastic lens with a blue light diverging material composed of a compound of thiophene and benzene to disperse blue light in a wavelength range of 380 to 400 nm. Besides the blue light diverging material, an ultraviolet light blocking material, a pigment, and a polymerization initiator can be further mixed in the monomer.</p>
+      </section>
+      <section id="product-imgs">
+        <div id="container">
+          <div class="imgs" id="glasses1"></div>
+          <div class="imgs" id="glasses2"></div>
+          <div class="imgs" id="glasses3"></div>
+          <div class="imgs" id="glasses4"></div>
+          <div class="imgs" id="glasses5"></div>
+        </div>
+      </section>
+    </article>
+    <article id="about">
+      <section id="company">
+        <h2>Who are we?</h2>
+        <p>Our vission is clear: Give people glasses they can actually afford but still make them look like a million bucks. It started small, a little company with big ideas, but it quickly grew into a phenomenon.</p>
+        <p>We are on a mission to bring high-quality, sustainably made prescription glasses to anyone in the world, no matter where they live and how much money they have.
 
+          Our goal is to transform people’s lives through better vision – enabling them to learn, work and be independent</p>
+       
+      </section>
+      <section id="glasses">
+        <h2>Our glasses</h2>
+        <p>More than 80 percent of all eyeglasses worn today have plastic lenses, but plastic lenses have not always been the lens of choice. The glass lens remained dominant until 1952, when plastic lenses were introduced. The plastic lens rapidly grew in popularity because the lens was lighter and less prone to breakage.
+
+        </p>
+        <p> 
+          <h3>Design</h3>
+          
+          Eyeglass lenses are designed in a variety of shapes to match eyeglass frames. The thickness and contour of each lens will vary.
+        </p>
+        </section>
+
+        <section id="quality">
+          <h3>Quality Assurance</h3> 
+          We are committed to providing a quality product and a safe shopping experience</section>
+      
+    </article>
+    <article id="shop">
+      <section id="shop-p">
+        <h2>Welcome to our shop!</h2>
+        <section id="gift">
+          <br>
+          We have a gift for you! 
+          <br>
+          Click the button under and see a code for your discount on your shopping cart!
+          <br>
+          <button id="btn-d">Gift Discount!</button>
+          <p id="discnt"></p>
+        </section>
+       
+      </section>
+      <section id="shop-form">
+        <form action="#">
+          <label for="shape">Choose your shape:</label><br>
+          <select name="shape" id="shape">
+            <option value="round">Round</option>
+            <option value="square">Square</option>
+            <option value="elipsis">Elipsis</option>
+          </select>
+          <br>
+          <label for="frame">Choose your frame color:</label><br>
+          <select name="frame" id="frame">
+            <option value="black">Black</option>
+            <option value="transparent">Transparent</option>
+            <option value="white">White</option>
+          </select>
+          <br>
+          <label for="delivery">Choose your delivery option:</label><br>
+          <select name="delivery" id="delivery">
+            <option value="at_store"> At store<i class="fas fa-store-alt"></i></option>
+            <option value="delivered_home">Delivered Home<i class="fas fa-truck"></i></option>
+          </select>
+          <br>
+          <label>Input your discount code here: <br><input type="text" name="code" id="code"> </label>
+          <br>
+          <button type="submit">Order here</button>
+
+          <p id="delivery">
+            Two possible ways to get your items:
+            <br>
+            <ul>
+              <li><i class="fas fa-truck"></i> Get it delivered to your home address</li>
+              <li><i class="fas fa-store-alt"></i> Pick it up in our closest store</li>
+            </ul>
+          </p>
+
+        </form>
+      </section>
+    </article>
+
+  </main>
+  <footer>
+    Thanks for visiting hope to see you soon!
+  </footer>
+
+  <script>
+    let disc = document.querySelector("#discnt");
+    let btn = document.querySelector("#btn-d");
+    
+    btn.onclick = function discount() {
+      disc.innerHTML = Math.random().toString(36).substr(2, 5);
+    };
+    
+  </script>
+</body>
+</html>

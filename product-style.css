@@ -1,0 +1,508 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  color: black;
+  background-color: hsla(0, 0%, 70%, 0.5);
+}
+
+header {
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 70%);
+  z-index: 5;
+}
+
+nav {
+  width: 100%;
+  margin: 0.1em 1em 0.1em 0;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 70%);
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1em 0 0;
+}
+
+nav ul li:first-child {
+  margin-right: 0 3em 0 0;
+  font-size: 3em;
+  padding: 0.3em;
+  color: rgb(14, 60, 199);
+  border: 2px outset blue;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: darkred;
+}
+
+#offer {
+  width: 100%;
+  padding: 0.3em;
+  text-align: center;
+  animation-name: color;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+  background-color:hsl(0, 0%, 60%);
+}
+
+@keyframes color {
+  0% {color:white}
+  100% {color:red}
+}
+
+main {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0; 
+  margin-top: 12em;
+  position: static;
+  z-index: 3;
+  background: url("main1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#s-offer {
+  box-sizing: border-box;
+  width: 100%;
+  border-image: url("border.png") 840 fill/ 2em / 0 repeat;
+  padding: 1em;
+  text-align: center;
+  color: black;
+  background-color:rgba(255, 255, 255, 0.8);
+  animation-name: border-flash;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes border-flash {
+  0% {border: none;}
+  100% {border-image: url("border.png") 840 fill/ 2em / 0 round;}
+}
+
+#offer-desc h3 {
+  color: red;
+  overflow: hidden;
+  z-index: 2;
+}
+
+
+#offer-imgs {
+  overflow: hidden;
+  padding: 0;
+  height: 5em;
+  margin: 0.5em auto;
+  z-index: 1;
+}
+
+.o-img {
+ height: 3em;
+ font-size: 1.5em;
+ padding: 0.1em;
+}
+
+.fa-plus {
+  vertical-align: middle;
+}
+
+#product {
+  background:rgba(255, 255, 255, 0.5);
+  background-position: cover;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5em;
+  margin: 0;
+}
+
+.imgs {
+  box-sizing: border-box;
+  margin: 0.1em;
+  height: 10em;
+  width: auto;
+}
+
+#container {
+  display: grid;
+}
+
+#glasses1 {
+  grid-area: 1/1/2/2;
+  background-image: url("glasses1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#glasses2 {
+  grid-area: 1/2/2/3;
+  background-image: url("glasses2.jfif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#glasses3 {
+  background-image: url("glasses3.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#glasses4 {
+  background-image: url("glasses4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#glasses5 {
+  grid-area: 3/1/4/3;
+  margin-bottom: 0;
+  background-image: url("glasses5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#about {
+  color: black;
+  box-sizing: border-box;
+  background:rgba(255, 255, 255, 0.5);
+  background-position: cover;
+  margin-bottom: 0;
+}
+
+#quality {
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+}
+
+
+#shop {
+  box-sizing: border-box;
+  border-top: 2px solid rgb(100, 98, 98);
+  color: black;
+  background-color:rgba(255, 255, 255, 0.5);
+  margin:  0;
+  padding: 0;
+}
+
+#gift {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+#shop-p {
+  margin:  0 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+#btn-d {
+  border: none;
+  padding: 0.3em 1em;
+  margin: 1em 0 0 0;
+  text-align: center;
+  width: fit-content;
+  font-family: inherit;
+  font-size: 1.3em;
+  font-weight: bold;
+  background-color: black;
+  animation-name: color;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#discnt {
+  font-size: 2em;
+  text-align: center;
+  background-color: white;
+  color: black;
+  height: 1em;
+  margin: 0.3em auto ;
+  padding: 0.5em;
+  width: 3em;
+}
+
+#shop ul {
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+
+#shop-form {
+  box-sizing: border-box;
+  padding: 0.5em;
+  text-align: center;
+}
+
+select {
+  width: 30%;
+  padding: 0.5em 0;
+}
+
+label {
+  width: 50%;
+  padding: 0.3em;
+  
+}
+
+input {
+  width: 20%;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+button[type="submit"] {
+  border: none;
+  padding: 0.5em 0;
+  margin: 0.5em 0 0 0;
+  text-align: center;
+  width: 35%;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: black;
+  animation-name: color;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+footer {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1em auto;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    width: 100%;
+    margin: 0;
+  }
+
+  header ul li:first-child {
+    text-align: left;
+    margin-right: 7em;
+  }
+
+  main {
+    background: url("main.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #s-offer {
+    width: 100%;
+    margin: 0;
+  }
+
+  #container {
+    width: 100%;
+    display: grid;
+    gap: 0.3em;
+  }
+
+  #glasses1 {
+    width: 20em;
+    grid-area: 1/1/2/6;
+  }
+
+  #glasses2 {
+    width: 20em;
+    grid-area: 1/6/2/12;
+  }
+
+  #glasses3 {
+    width: 20em;
+    grid-area: 2/1/3/6;
+  }
+
+  #glasses4 {
+    width: 20em;
+    grid-area: 2/6/3/12;
+  }
+
+  #glasses5 {
+    width: 20em;
+    grid-area: 3/1/4/12;
+    margin: 0 auto;
+  }
+
+  #about {
+    display: grid;
+    gap: 0.5em;
+  }
+
+  #company {
+    grid-area: 1/1/2/6;
+    border-right: 2px solid rgb(100, 98, 98);
+    padding: 0.5em;
+  }
+
+  #glasses {
+    grid-area: 1/6/2/12;
+    padding: 0.5em;
+  }
+
+  #quality {
+    grid-area: 2/1/3/12;
+    text-align: center;
+  }
+
+  #shop {
+    border-top: 2px solid rgb(100, 98, 98);
+    margin-top: 0em;
+  
+  }
+
+  select {
+    width: 20%;
+    padding: 0.5em 0;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+
+  header ul li:first-child {
+    text-align: left;
+    margin-right: 60%;
+  }
+
+  #s-offer {
+    animation-name: border-flash;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes border-flash {
+    0% {border: none;}
+    100% {border-image: url("border.png") 840 fill/ 2em / 0 round;}
+  }
+
+  #product-imgs {
+    perspective: 300px;
+    position: relative;
+    width: 20em;
+    height: 15em;
+    margin: 3em auto 0 auto;
+  }
+
+  #container {
+    transform: translateZ(-300px) rotate3d(0, 1, 0, 0deg);
+    transform-style: preserve-3d;
+    animation-name: presentation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+  }
+
+  .imgs {
+    position: absolute;
+    margin: 0 auto;
+  }
+
+  #glasses1 {
+    transform: rotateY(0deg) translateZ(30em);
+  }
+
+  #glasses2 {
+    transform: rotateY(72deg) translateZ(30em);
+  }
+
+  #glasses3 {
+    transform: rotateY(144deg) translateZ(30em);
+  }
+
+  #glasses4 {
+    transform: rotateY(216deg) translateZ(30em);
+  }
+
+  #glasses5 {
+    transform: rotateY(288deg) translateZ(30em);
+  }
+
+  @keyframes presentation {
+    0% {transform: translateZ(-30em) rotate3d(0, 1, 0, 0deg);}
+    10% {transform: translateZ(-30em) rotate3d(0, 1, 0, 0deg);}
+    20% {transform: translateZ(-30em) rotate3d(0, 1, 0, 72deg);}
+    30% {transform: translateZ(-30em) rotate3d(0, 1, 0, 72deg);}
+    40% {transform: translateZ(-30em) rotate3d(0, 1, 0, 144deg);}
+    50% {transform: translateZ(-30em) rotate3d(0, 1, 0, 144deg);}
+    60% {transform: translateZ(-30em) rotate3d(0, 1, 0, 216deg);}
+    70% {transform: translateZ(-30em) rotate3d(0, 1, 0, 216deg);}
+    80% {transform: translateZ(-30em) rotate3d(0, 1, 0, 288deg);}
+    90% {transform: translateZ(-30em) rotate3d(0, 1, 0, 288deg);}
+    100% {transform: translateZ(-30em) rotate3d(0, 1, 0, 360deg);}
+  }
+
+  input {
+    width: 10%;
+  }
+
+  button[type="submit"] {
+    width: 20%;
+  }
+
+  #shop ul {
+    margin: 0 auto;
+  }
+
+  #shop ul li {
+    display: inline;
+    padding: 0 0.5em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body, header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header ul li:first-child {
+    text-align: left;
+    margin-right: 70%;
+  }
+
+  main {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+}
+

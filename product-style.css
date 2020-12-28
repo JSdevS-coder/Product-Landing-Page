@@ -155,7 +155,6 @@ main {
   grid-area: 1/1/2/2;
   background-image: url("glasses1.jpg");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 }
 
